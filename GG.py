@@ -116,9 +116,9 @@ def loop(pho):
 
 if __name__ == "__main__":
     exec=ThreadPoolExecutor(max_workers=10000)
-    print("[*] sms 1112 11 api by MASTERTEAM")
+    print("[*] spamSMS 11 api by MASTERTEAM")
     pho = input("[!] เบอร์ >> ")
-    i = int(input("[!] จำนวน sms (เต็ม. 10พัน) >> "))
+    i = int(input("[!] จำนวน sms (เต็ม. 1000พัน) >> "))
     exec.submit(loop,pho)
     for _ in range(i):
         exec.submit(shopat,pho) # sms
